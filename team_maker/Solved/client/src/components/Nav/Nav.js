@@ -10,13 +10,13 @@ const Nav = () =>
           <span className="icon-bar" />
         </button>
         <a href="/" className="navbar-brand">
-          TeamUp
+          Team Up
         </a>
-        <a href="../pages/teams" className="navbar-brand">
-          teams
-        </a>
-        <a href="../pages/characters" className="navbar-brand">
+        <a href="../pages/Characters" className="navbar-brand">
           characters
+        </a>
+        <a href="../pages/CreationForm" className="navbar-brand">
+          Create a Team
         </a>
       </div>
     </div>

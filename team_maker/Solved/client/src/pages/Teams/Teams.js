@@ -5,7 +5,6 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-import { Input, TextArea, FormBtn } from "../../components/Form";
 
 class Teams extends Component {
   state = {
@@ -39,6 +38,8 @@ class Teams extends Component {
     this.setState({
       [name]: value
     });
+    console.log(name, value)
+    console.log(this.state)
   };
 
   handleFormSubmit = event => {
@@ -59,9 +60,9 @@ class Teams extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-12 sm-12">
+          <Col size="sm-12">
             <Jumbotron>
-              <h1>All Teams</h1>
+              <h1>Your Teams</h1>
             </Jumbotron>
             {this.state.teams.length ? (
               <List>
