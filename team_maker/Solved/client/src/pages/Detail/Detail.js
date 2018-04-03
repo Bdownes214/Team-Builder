@@ -23,7 +23,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.team.teamName} containes {this.state.team.characters}
+                {this.state.team.teamName} includes {this.state.team.characters}
               </h1>
             </Jumbotron>
           </Col>
@@ -40,7 +40,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Teams</Link>
+            <Link to="/">← Back to Home</Link>
           </Col>
         </Row>
       </Container>

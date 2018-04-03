@@ -4,6 +4,8 @@ import Teams from "./pages/Teams";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import CreationForm from "./pages/CreationForm/CreationForm";
+import Characters from "./pages/Characters/Characters";
 
 const App = () =>
   <Router>
@@ -11,6 +13,8 @@ const App = () =>
       <Nav />
       <Switch>
         <Route exact path="/" component={Teams} />
+        <Route exact path="/pages/CreationForm" component={CreationForm} />
+        <Route exact path="/pages/Characters" component={Characters} />
         <Route exact path="/teams" component={Teams} />
         <Route exact path="/books/:id" component={Detail} />
         <Route component={NoMatch} />
