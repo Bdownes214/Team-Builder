@@ -1,0 +1,7 @@
+#panel{
+  height: 650px;
+  width: 600px;
+  background-color: gray;
+  float: right;
+  font-size: 15px;
+}
